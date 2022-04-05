@@ -7,7 +7,7 @@ const CardSt = styled.article`
   padding: 1rem;
   border-radius: 25px;
   width: 400px;
-  height: 490px;
+  height: 535px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 15px 15px;
 
@@ -55,6 +55,29 @@ img {
   background-color: rgb(197, 197, 197);
 }
 
+.cardBtnGit {
+  position: absolute;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  bottom: 10.5%;
+  left: 0;
+  border: none;
+  border-bottom: 0.13rem solid var(--navbar-background-color);
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.cardBtnGit:hover {
+  background-color: rgb(221, 221, 221);
+  color: var(--text-color);
+}
+
+.cardBtnGit:active {
+  background-color: rgb(197, 197, 197);
+}
+
 @media (max-width: 450px) {
   padding: 1rem;
   border-radius: 25px;
@@ -75,14 +98,15 @@ img {
 }
 `
 
-function CardProject({image, name, description, link}) {
+function CardProject({image, name, description, gitLink, link}) {
   return <CardSt draggable="false">
       <img src={image} alt="Project image"  draggable="false"/>
       <div className="card-info">
         <h2>{name}</h2>
         <p>{description}</p>
       </div>
-      <a href={link} target="_blank"  draggable="false"><button className="cardBtn" >Open APP</button></a>
+      <a href={gitLink} target="_blank"  draggable="false"><button className="cardBtnGit" >GitHub folder</button></a>
+      <a href={link} target="_blank"  draggable="false"><button className="cardBtn" >App</button></a>
   </CardSt>
 }
 

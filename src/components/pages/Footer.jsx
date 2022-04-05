@@ -12,6 +12,7 @@ const FooterCSS = styled.footer`
   background-color: var(--text-color);
   color: var(--background-color);
   width: 100vw;
+  box-shadow: 0 0 20px rgba(0,0,0,1);
 `
 
 function Footer() {

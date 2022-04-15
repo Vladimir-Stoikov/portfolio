@@ -14,6 +14,13 @@ const projects = [
     appLink: 'https://vladimir-stoikov.github.io/login-form-redux/',
   },
   {
+    img: '/CurrencyConverter.png',
+    title: 'Currency Converter',
+    desc: 'Converting Some type of currency from one to another one.',
+    gitLink: 'https://github.com/Vladimir-Stoikov/currency-converter',
+    appLink: 'https://vladimir-stoikov.github.io/currency-converter/',
+  },
+  {
     img: '/PasswordGenerator.png',
     title: 'Password Generator',
     desc: 'Generate password with different properties',

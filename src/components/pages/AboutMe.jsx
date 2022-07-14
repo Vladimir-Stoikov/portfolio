@@ -149,7 +149,7 @@ function AboutMe() {
         { secondarySkillsStack.map((elem, id) => <LiSkillCloud key={id} backColor='var(--navbar-background-color)' color='var(--secondary-color)'>{elem}</LiSkillCloud>)}
       </SkillsList>
     </InfoSection>
-    <img className="photo" src="/photo_for_portfolio.png" alt="Avatar" />
+    <img className="photo" src="/photoforportfolio.png" alt="Avatar" />
   </AboutMeSection>
 }
 

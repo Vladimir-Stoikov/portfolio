@@ -12,8 +12,6 @@ const ProjectCards = styled.section`
   margin: 5rem 0 4rem;
 `
 
-projects.forEach(item => console.log(item))
-
 function Projects() {
   return <>
       <ProjectCards>

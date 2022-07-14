@@ -15,6 +15,7 @@ const Header = styled.header`
   align-items: center;
   justify-content: space-around;
   width: 100vw;
+  color: var(--secondary-color);
 }
 
 a {
@@ -36,7 +37,6 @@ a {
 }
 
 a:hover {
-  color: var(--background-color);
   background-color: var(--text-color);
 }
 
@@ -60,7 +60,7 @@ a:active {
 
 function Navbar() {
   return (
-      <>
+   <>
     <Header>
       <nav className='navbar'>
         <Link  draggable="false" to="/">About Me</Link>

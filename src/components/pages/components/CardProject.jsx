@@ -82,7 +82,7 @@ img {
   padding: 1rem;
   border-radius: 25px;
   width: 85%;
-  height: 450px;
+  max-height: auto;
   .card-info {
   margin-top: 10px;
   h2 {
@@ -93,20 +93,17 @@ img {
    }
   } 
 }
-@media (max-width: 300px) {
-  height: 470px;
-}
 `
 
 function CardProject({image, name, description, gitLink, link}) {
   return <CardSt draggable="false">
-      <img src={image} alt="Project image"  draggable="false"/>
+      <img src={image} alt="App" draggable="false"/>
       <div className="card-info">
         <h2>{name}</h2>
         <p>{description}</p>
       </div>
-      <a href={gitLink} target="_blank"  draggable="false"><button className="cardBtnGit" >GitHub folder</button></a>
-      <a href={link} target="_blank"  draggable="false"><button className="cardBtn" >App</button></a>
+      <a href={gitLink} target="_blank"  draggable="false" rel = "noreferrer"><button className="cardBtnGit" >GitHub folder</button></a>
+      <a href={link} target="_blank"  draggable="false" rel = "noreferrer"><button className="cardBtn" >App</button></a>
   </CardSt>
 }
 

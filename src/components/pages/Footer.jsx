@@ -9,10 +9,11 @@ const FooterCSS = styled.footer`
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
-  background-color: var(--text-color);
-  color: var(--background-color);
+  background-color: var(--navbar-background-color);
+  color: var(--secondary-color);
   width: 100vw;
   box-shadow: 0 0 20px rgba(0,0,0,1);
+  z-index: 5;
 `
 
 function Footer() {

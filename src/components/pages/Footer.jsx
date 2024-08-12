@@ -17,7 +17,7 @@ const FooterCSS = styled.footer`
 `
 
 function Footer() {
-  return <FooterCSS>Copyright © 2022</FooterCSS>
+  return <FooterCSS>Copyright © 2022-2024</FooterCSS>
 }
 
 export default Footer;
